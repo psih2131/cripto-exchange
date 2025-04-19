@@ -1,0 +1,122 @@
+.hero-sec-v1 {
+    padding-top: 107px;
+    padding-bottom: 92px;
+
+    .container {
+        position: relative;
+        height: 625px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+}
+
+.hero-sec-v1__img {
+    position: absolute;
+    height: 625px;
+    top: 0;
+    display: block;
+    left: -72px;
+}
+
+.hero-sec-v1__main-data {
+    position: relative;
+    z-index: 10;
+    padding-top: 70px;
+    width: 570px;
+}
+
+.hero-sec-v1__subtitle {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 16px;
+    opacity: 0.7;
+    margin-bottom: 23px;
+}
+
+.hero-sec-v1__title {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 69px;
+    max-width: 475px;
+    color: #fff;
+
+    b {
+        background: linear-gradient(90deg, #EED68A 0%, #8F5B15 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.hero-sec-v1__text {
+    color: #FFF;
+    margin-top: 15px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+    opacity: 0.7;
+}
+
+.hero-sec-v1__btn {
+    border-radius: 8px;
+    background: linear-gradient(90deg, #EED68A 0%, #97621B 100%), linear-gradient(89deg, #D3B244 0%, #F0D98C 100%);
+    border: none;
+    display: inline-block;
+    padding: 12px 78px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: all ease 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all ease 0.3s;
+    }
+}
+
+.text-sec-v1 {
+    padding-bottom: 60px;
+    color: #FFF;
+    opacity: 0.5;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.text-sec-v2 {
+    padding: 60px 0;
+    background: #0D0D0D;
+
+    .container {
+        padding: 0 10px;
+    }
+}
+
+.text-sec-v2__title {
+    color: #FFF;
+    opacity: 0.5;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.text-sec-v2__text {
+    color: #FFF;
+    margin-top: 5px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.3;
+}
