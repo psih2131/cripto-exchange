@@ -1,0 +1,227 @@
+.how-to-buy-sec {
+    padding-top: 48px;
+    padding-bottom: 160px;
+}
+
+.how-to-buy-sec__title {
+    text-align: center;
+
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 69px;
+
+    b {
+        font-weight: 500;
+        background: linear-gradient(45deg, #E1C167 -31%, #DDB74B 17.41%, #FFE8A7 60.65%, #E1C167 98.08%), #D9D9D9;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.how-to-buy-sec__subtitle {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.how-to-buy-sec__posts-wrapper {
+    margin: 0 auto;
+    margin-top: 90px;
+    width: 965px;
+
+    .how-to-buy-sec__post {
+        &:first-child {
+            .how-to-buy-sec__post-btn-container {
+                margin-top: 66px;
+            }
+        }
+
+        &:nth-child(even) {
+            .how-to-buy-sec__post-img {
+                order: 2;
+            }
+
+            .how-to-buy-sec__mdl-row {
+                order: 3;
+            }
+
+            .how-to-buy-sec__post-text-wrapper {
+                padding-left: 0;
+                padding-right: 40px;
+            }
+        }
+    }
+}
+
+.how-to-buy-sec__post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+.how-to-buy-sec__post-img {
+    width: 408px;
+    display: block;
+}
+
+.how-to-buy-sec__post-text-wrapper {
+    width: calc(100% - 408px);
+    padding-left: 40px;
+}
+
+.how-to-buy-sec__post-title {
+    background: linear-gradient(90deg, #EED68A 0%, #8F5B15 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.how-to-buy-sec__post-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.7;
+
+    a {
+        text-decoration: underline;
+        color: #fff;
+    }
+}
+
+.how-to-buy-sec__post-btn-container {
+    margin-top: 30px;
+}
+
+
+
+.how-to-buy-sec__post-btn {
+    padding: 1px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: all ease 0.3s;
+    background: linear-gradient(45deg, #E1C167 -31%, #DDB74B 17.41%, #FFE8A7 60.65%, #E1C167 98.08%), #D9D9D9;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all ease 0.3s;
+    }
+}
+
+.how-to-buy-sec__post-btn-wrapper {
+    border-radius: 8px;
+    display: inline-block;
+    background: #060606;
+}
+
+.how-to-buy-sec__post-btn-text {
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: linear-gradient(45deg, #E1C167 -31%, #DDB74B 17.41%, #FFE8A7 60.65%, #E1C167 98.08%), #D9D9D9;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 10px 26px;
+    -webkit-text-fill-color: transparent;
+}
+
+.how-to-buy-sec__mdl-row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.how-to-buy-sec__mdl-row-img {
+    height: 90px;
+    display: block;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .how-to-buy-sec__title {
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    .how-to-buy-sec__subtitle {
+        margin-top: 10px;
+    }
+
+    .how-to-buy-sec__posts-wrapper {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .how-to-buy-sec__post-img {
+        width: 45%;
+    }
+
+    .how-to-buy-sec__post-text-wrapper {
+        width: 55%;
+        padding-left: 30px;
+    }
+
+    .how-to-buy-sec__post-title {
+        font-size: 24px;
+    }
+
+    .how-to-buy-sec__post-text {
+        font-size: 14px;
+    }
+
+    .how-to-buy-sec__posts-wrapper .how-to-buy-sec__post:first-child .how-to-buy-sec__post-btn-container {
+        margin-top: 30px;
+    }
+
+    .how-to-buy-sec {
+        padding-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 755px) {
+    .how-to-buy-sec {
+        padding-top: 100px;
+    }
+
+    .how-to-buy-sec__title {
+        font-size: 32px;
+    }
+
+    .how-to-buy-sec__post {
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+    }
+
+    .how-to-buy-sec__post-img {
+        width: 100%;
+    }
+
+    .how-to-buy-sec__post-text-wrapper {
+        width: 100%;
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    .how-to-buy-sec__mdl-row-img {
+        display: none;
+    }
+
+    .how-to-buy-sec__posts-wrapper .how-to-buy-sec__post:nth-child(even) .how-to-buy-sec__post-img {
+        order: 0;
+    }
+
+    .how-to-buy-sec {
+        padding-bottom: 0;
+    }
+}

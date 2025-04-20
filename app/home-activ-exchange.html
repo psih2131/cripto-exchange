@@ -28,10 +28,12 @@
 
 <body>
     <div class="app">
+
         <header class="header">
             <div class="container">
                 <a href="" class="header__logo">
                     <img src="img/_src/header-logo.png" alt="" class="header__logo-img">
+                    <img src="img/_src/header-logo-mob.png" alt="" class="header__logo-img-mob">
                 </a>
                 <nav class="header__nav">
                     <ul class="header__nav-ul">
@@ -51,8 +53,36 @@
                         </span>
                     </a>
                 </div>
+
+                <div class="burger">
+                    <span class="burger__row br-1"></span>
+                    <span class="burger__row br-2"></span>
+
+                </div>
             </div>
         </header>
+        <div class="header-mob">
+            <div class="container">
+                <ul class="header__nav-ul-mob">
+                    <li class="header__nav-list header__nav-list-link_activ">
+                        <a href="" class="header__nav-list-link">Token sale</a>
+                    </li>
+
+                    <li class="header__nav-list">
+                        <a href="" class="header__nav-list-link">How to buy</a>
+                    </li>
+                </ul>
+
+                <div class="header__btn-wrapper">
+                    <a href="" class="header__btn btn-type-1">
+                        <span class="btn-type-1__wrapper">
+                            <span class="btn-type-1__text">Connect wallet</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <main class="main">
             <section class="hero-exchange-activ-sec">
                 <div class="container">
@@ -110,7 +140,8 @@
                                     Copy the wallet address
                                 </a>
 
-                                <a href="" class="hero-exchange-activ-sec__form-btn-v2">
+                                <a class="hero-exchange-activ-sec__form-btn-v2 air-open-btn"
+                                    data-popup-current="mainFform">
                                     <span class="hero-exchange-activ-sec__form-btn-v2-wrapper">
                                         <span class="hero-exchange-activ-sec__form-btn-v2-text">Buy now</span>
                                     </span>
@@ -493,6 +524,8 @@
             <section class="banner-sec">
                 <div class="container">
                     <div class="banner-sec__wrapper">
+                        <img src="img/_src/banner-bg.png" alt="" class="banner-sec__wrapper-img sda1">
+                        <img src="img/_src/banner-bg.png" alt="" class="banner-sec__wrapper-img sda2">
                         <h2 class="banner-sec__title">Are you new to crypto?</h2>
                         <p class="banner-sec__text">Find out more about how to start your journey in crypto, install a
                             wallet and buy tokens, study our lightpaper to be aware of all the important details.</p>
@@ -503,13 +536,437 @@
                 </div>
             </section>
 
+            <section class="partners-sec">
+                <div class="container">
+                    <div class="partners-sec__header">
+                        <h2 class="partners-sec__title">Security <b>Contributors</b></h2>
+                        <p class="partners-sec__subtitle">Partnering with experts, we invest heavily in preventive
+                            measures to ensure maximum confidence.</p>
+                    </div>
+                    <div class="partners-sec__row">
+                        <img src="img/_src/pr1.png" alt="" class="partners-sec__el">
+                        <img src="img/_src/pr2.png" alt="" class="partners-sec__el">
+                        <img src="img/_src/pr3.png" alt="" class="partners-sec__el">
+                        <img src="img/_src/pr4.png" alt="" class="partners-sec__el">
+                    </div>
+                </div>
+            </section>
+
 
 
         </main>
 
         <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="footer__top-left">
+                        <p class="footer__top-title">World Liberty Financial</p>
+                        <p class="footer__top-subtitle">Empower Your Financial Freedom with DeFi.</p>
+                        <div class="footer__top-social-row">
+                            <a href="" class="footer__top-social">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="23" height="20.7767" fill="url(#pattern0_425_507)" />
+                                    <defs>
+                                        <pattern id="pattern0_425_507" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_425_507"
+                                                transform="scale(0.00333333 0.00369004)" />
+                                        </pattern>
+                                        <image id="image0_425_507" width="300" height="271" preserveAspectRatio="none"
+                                            xlink:href="data:image/png;base64,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" />
+                                    </defs>
+                                </svg>
 
+                            </a>
+                            <a href="" class="footer__top-social">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24 12C24 5.3719 18.6281 0 12 0C5.3719 0 0 5.3719 0 12C0 17.9907 4.3875 22.9547 10.125 23.8547V15.4688H7.0781V12H10.125V9.35625C10.125 6.3492 11.9156 4.6875 14.6578 4.6875C15.9703 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8297C14.3391 7.875 13.875 8.8008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8547C19.6125 22.9547 24 17.9907 24 12Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="footer__top-nav">
+                        <ul class="footer__top-nav-ul">
+                            <li class="footer__top-nav-list">
+                                <a href="" class="footer__top-nav-link">Token Sale</a>
+                            </li>
+                            <li class="footer__top-nav-list">
+                                <a href="" class="footer__top-nav-link">Governance</a>
+                            </li>
+                            <li class="footer__top-nav-list">
+                                <a href="" class="footer__top-nav-link">Bylaws of WLF</a>
+                            </li>
+                            <li class="footer__top-nav-list">
+                                <a href="" class="footer__top-nav-link">Governance
+                                    Participation FAQ</a>
+                            </li>
+                        </ul>
+
+                        <ul class="footer__top-nav-ul">
+                            <li class="footer__top-nav-list">
+                                <a href="" class="footer__top-nav-link">How to buy</a>
+                            </li>
+                            <li class="footer__top-nav-list">
+                                <a href="" class="footer__top-nav-link">Web3 wallets</a>
+                            </li>
+                            <li class="footer__top-nav-list">
+                                <a href="" class="footer__top-nav-link">Gold paper</a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="footer__top-nav-ul">
+                            <li class="footer__top-nav-list">
+                                <a href="" class="footer__top-nav-link">Privacy policy</a>
+                            </li>
+                            <li class="footer__top-nav-list">
+                                <a href="" class="footer__top-nav-link">Token Sale Terms
+                                    & Conditions</a>
+                            </li>
+                            <li class="footer__top-nav-list">
+                                <a href="" class="footer__top-nav-link">Risk Disclosures</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer__down">
+                    <h2 class="text-sec-v2__title">© 2025 WorldLibertyFinancial, Inc. All Rights Reserved.</h2>
+                    <p class="text-sec-v2__text">*DT Marks DEFI LLC, an entity affiliated with Donald J. Trump and
+                        certain of his family members, own approximately 60% of the equity interests in WLF Holdco LLC,
+                        which holds the only membership interest in World Liberty Financial, Inc., a Delaware non-stock
+                        corporation and which is developing the WLF protocol and operates the WLF governance platform.
+                        WLF Holdco LLC holds all of the rights to net protocol revenues from the WLF protocol (other
+                        than net proceeds from the sale of $WLFI tokens) pursuant to the terms of agreements with World
+                        Liberty Financial, Inc. None of Donald J. Trump, his family members or any director, officer or
+                        employee of Trump Organization or of DT Marks LLC is an officer, director or employee of, WLF
+                        Holdco LLC or World Liberty Financial, Inc., except that Eric Trump serves as one of the
+                        managers on the board of managers of WLF Holdco LLC. DT Marks DEFI LLC along with certain family
+                        members of Donald J. Trump also holds 22.5 billion $WLFI tokens, and DT Marks DEFI LLC is
+                        entitled to receive fees from World Liberty Financial, Inc. pursuant to a service agreement,
+                        equal to 75% of $WLFI token sale proceeds after deduction of agreed reserves, expense and other
+                        amounts. Any references to or quotes or imagery attributed to or associated with Donald J. Trump
+                        or his family members should not be construed as an endorsement or representation or warranty
+                        with respect to any product or service offering. $WLFI tokens and use of the WLF protocol and
+                        governance platform are offered and sold solely by World Liberty Financial, Inc. or its
+                        affiliates. WLF Holdco LLC, DT Marks DEFI LLC, World Liberty Financial, Inc., the WLF protocol,
+                        WLF governance platform and $WLFI tokens are not political or associated with any political
+                        campaign.
+                        The tokens in the US token sale have not been registered under the US Securities Act or any
+                        other law or with any regulatory authority. World Liberty Financial does not consider the tokens
+                        to be securities but the tokens offered in this US token sale may only be sold to persons who
+                        have been verified as accredited investors under Rule 506(c) of Regulation D under the
+                        Securities Act. No information on this site is intended to be an offer to buy or a solicitation
+                        of an offer to sell any tokens where not permitted by applicable law. Information on this site
+                        may not be copied or republished.</p>
+                </div>
+            </div>
         </footer>
+
+
+        <div class="popup-air main-form" data-air="mainFform">
+            <div class="main-form-popup">
+                <p class="main-form-popup__title">Exchange $TRUMP</p>
+                <p class="main-form-popup__subtitle">Enter the amount, fix the price and make the exchange. Full
+                    transparency and user-friendliness.</p>
+
+                <div class="main-form-popup__inp-wrapper sd1">
+                    <div class="main-form-popup__inp">
+                        <p class="main-form-popup__inp-title">You Send</p>
+                        <input type="text" value="0.01" placeholder="0.00">
+                    </div>
+
+                    <div class="main-form-popup__select">
+                        <div class="main-form-popup__select-activ main-form-popup__select-value">
+                            <div class="main-form-popup__select-value-img">
+                                <svg width="20" height="22" viewBox="0 0 20 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                        fill="#D9D9D9" />
+                                    <path
+                                        d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                        fill="url(#paint0_linear_435_240)" />
+                                    <path
+                                        d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                        stroke="#D9D9D9" stroke-width="0.821918" />
+                                    <path
+                                        d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                        stroke="url(#paint1_linear_435_240)" stroke-width="0.821918" />
+                                    <path
+                                        d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                        stroke="black" stroke-opacity="0.31" stroke-width="0.821918" />
+                                    <path
+                                        d="M14.4542 16.8885L12.9689 15.4031C12.5087 15.7239 12.0205 15.961 11.5045 16.1144C10.9954 16.2609 10.4724 16.2888 9.93545 16.1981C9.40546 16.1005 8.88594 15.8529 8.37688 15.4554L9.89361 13.9387C10.2004 14.1061 10.5108 14.1793 10.8246 14.1584C11.1384 14.1374 11.4417 14.0433 11.7346 13.8759C12.0275 13.6946 12.296 13.4819 12.54 13.2379C12.7702 13.0077 12.9515 12.7706 13.084 12.5266C13.2165 12.2825 13.2792 12.0454 13.2722 11.8153C13.2653 11.5852 13.1711 11.3794 12.9898 11.1981C12.8294 11.0377 12.6586 10.9506 12.4773 10.9366C12.3029 10.9157 12.1181 10.9471 11.9229 11.0308C11.7276 11.1005 11.5289 11.1946 11.3267 11.3132C10.9571 11.5294 10.6223 11.7386 10.3225 11.9408C10.0226 12.1291 9.7367 12.3034 9.46474 12.4638C9.19277 12.6103 8.92081 12.7288 8.64884 12.8195C8.11189 13.0217 7.59236 13.0949 7.09027 13.0391C6.58819 12.9694 6.07564 12.673 5.55263 12.15C5.10632 11.7037 4.83436 11.2365 4.73673 10.7483C4.6391 10.2463 4.67397 9.75114 4.84133 9.263C5.00172 8.76788 5.24579 8.32158 5.57355 7.92409L4.10912 6.45967L5.48987 5.07892L6.97521 6.56427C7.39362 6.22954 7.8469 6.00639 8.33504 5.89482C8.82318 5.78324 9.31132 5.79021 9.79946 5.91574C10.2876 6.04126 10.7479 6.31322 11.1802 6.73163L9.72624 8.1856C9.48915 8.00429 9.24856 7.91015 9.00449 7.90317C8.75345 7.88922 8.49891 7.9485 8.2409 8.081C7.9759 8.20652 7.72137 8.39131 7.4773 8.63539C7.2681 8.83064 7.09376 9.04682 6.95429 9.28392C6.8218 9.51404 6.75206 9.74417 6.74509 9.97429C6.73114 10.1974 6.8218 10.4066 7.01705 10.6019C7.15652 10.7414 7.31343 10.8285 7.48776 10.8634C7.65512 10.8913 7.83295 10.8808 8.02123 10.832C8.20952 10.7693 8.40826 10.6891 8.61746 10.5914C8.91035 10.452 9.22067 10.2741 9.54842 10.058C9.8692 9.83482 10.176 9.64654 10.4689 9.49312C10.9571 9.20024 11.4173 8.98406 11.8497 8.84459C12.275 8.69815 12.69 8.67374 13.0944 8.77137C13.4989 8.85505 13.9103 9.10609 14.3287 9.5245C14.8099 10.0057 15.1132 10.5112 15.2388 11.0412C15.3643 11.5573 15.3434 12.0733 15.176 12.5893C15.0156 13.0984 14.7471 13.59 14.3706 14.0642L15.8245 15.5182L14.4542 16.8885Z"
+                                        fill="black" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_435_240" x1="-6.2" y1="27.4219" x2="19.9679"
+                                            y2="1.60763" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#E1C167" />
+                                            <stop offset="0.375" stop-color="#DDB74B" />
+                                            <stop offset="0.71" stop-color="#FFE8A7" />
+                                            <stop offset="1" stop-color="#E1C167" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_435_240" x1="-6.2" y1="27.4219" x2="19.9679"
+                                            y2="1.60763" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#E1C167" />
+                                            <stop offset="0.375" stop-color="#DDB74B" />
+                                            <stop offset="0.71" stop-color="#FFE8A7" />
+                                            <stop offset="1" stop-color="#E1C167" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <p class="main-form-popup__select-value-title">USDC</p>
+
+
+
+                        </div>
+                        <div class="main-form-popup__select-ar">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.8335 8.33334L10.0008 12.15L14.1668 8.33334" stroke="white"
+                                    stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="main-form-popup__select-all-value">
+                            <div class="main-form-popup__select-value">
+                                <div class="main-form-popup__select-value-img">
+                                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                            fill="#D9D9D9" />
+                                        <path
+                                            d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                            fill="url(#paint0_linear_435_240)" />
+                                        <path
+                                            d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                            stroke="#D9D9D9" stroke-width="0.821918" />
+                                        <path
+                                            d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                            stroke="url(#paint1_linear_435_240)" stroke-width="0.821918" />
+                                        <path
+                                            d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                            stroke="black" stroke-opacity="0.31" stroke-width="0.821918" />
+                                        <path
+                                            d="M14.4542 16.8885L12.9689 15.4031C12.5087 15.7239 12.0205 15.961 11.5045 16.1144C10.9954 16.2609 10.4724 16.2888 9.93545 16.1981C9.40546 16.1005 8.88594 15.8529 8.37688 15.4554L9.89361 13.9387C10.2004 14.1061 10.5108 14.1793 10.8246 14.1584C11.1384 14.1374 11.4417 14.0433 11.7346 13.8759C12.0275 13.6946 12.296 13.4819 12.54 13.2379C12.7702 13.0077 12.9515 12.7706 13.084 12.5266C13.2165 12.2825 13.2792 12.0454 13.2722 11.8153C13.2653 11.5852 13.1711 11.3794 12.9898 11.1981C12.8294 11.0377 12.6586 10.9506 12.4773 10.9366C12.3029 10.9157 12.1181 10.9471 11.9229 11.0308C11.7276 11.1005 11.5289 11.1946 11.3267 11.3132C10.9571 11.5294 10.6223 11.7386 10.3225 11.9408C10.0226 12.1291 9.7367 12.3034 9.46474 12.4638C9.19277 12.6103 8.92081 12.7288 8.64884 12.8195C8.11189 13.0217 7.59236 13.0949 7.09027 13.0391C6.58819 12.9694 6.07564 12.673 5.55263 12.15C5.10632 11.7037 4.83436 11.2365 4.73673 10.7483C4.6391 10.2463 4.67397 9.75114 4.84133 9.263C5.00172 8.76788 5.24579 8.32158 5.57355 7.92409L4.10912 6.45967L5.48987 5.07892L6.97521 6.56427C7.39362 6.22954 7.8469 6.00639 8.33504 5.89482C8.82318 5.78324 9.31132 5.79021 9.79946 5.91574C10.2876 6.04126 10.7479 6.31322 11.1802 6.73163L9.72624 8.1856C9.48915 8.00429 9.24856 7.91015 9.00449 7.90317C8.75345 7.88922 8.49891 7.9485 8.2409 8.081C7.9759 8.20652 7.72137 8.39131 7.4773 8.63539C7.2681 8.83064 7.09376 9.04682 6.95429 9.28392C6.8218 9.51404 6.75206 9.74417 6.74509 9.97429C6.73114 10.1974 6.8218 10.4066 7.01705 10.6019C7.15652 10.7414 7.31343 10.8285 7.48776 10.8634C7.65512 10.8913 7.83295 10.8808 8.02123 10.832C8.20952 10.7693 8.40826 10.6891 8.61746 10.5914C8.91035 10.452 9.22067 10.2741 9.54842 10.058C9.8692 9.83482 10.176 9.64654 10.4689 9.49312C10.9571 9.20024 11.4173 8.98406 11.8497 8.84459C12.275 8.69815 12.69 8.67374 13.0944 8.77137C13.4989 8.85505 13.9103 9.10609 14.3287 9.5245C14.8099 10.0057 15.1132 10.5112 15.2388 11.0412C15.3643 11.5573 15.3434 12.0733 15.176 12.5893C15.0156 13.0984 14.7471 13.59 14.3706 14.0642L15.8245 15.5182L14.4542 16.8885Z"
+                                            fill="black" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_435_240" x1="-6.2" y1="27.4219"
+                                                x2="19.9679" y2="1.60763" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#E1C167" />
+                                                <stop offset="0.375" stop-color="#DDB74B" />
+                                                <stop offset="0.71" stop-color="#FFE8A7" />
+                                                <stop offset="1" stop-color="#E1C167" />
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_435_240" x1="-6.2" y1="27.4219"
+                                                x2="19.9679" y2="1.60763" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#E1C167" />
+                                                <stop offset="0.375" stop-color="#DDB74B" />
+                                                <stop offset="0.71" stop-color="#FFE8A7" />
+                                                <stop offset="1" stop-color="#E1C167" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+
+                                <p class="main-form-popup__select-value-title">USDC</p>
+                            </div>
+
+                            <div class="main-form-popup__select-value">
+                                <div class="main-form-popup__select-value-img">
+                                    <svg width="43" height="43" viewBox="0 0 43 43" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2013_46)">
+                                            <circle cx="21.5" cy="21.5" r="21.5" fill="#50AF95" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M24.8485 22.9764C24.6894 22.9884 23.8674 23.0378 22.0338 23.0378C20.5754 23.0378 19.5399 22.9937 19.1767 22.9764C13.5406 22.7264 9.33377 21.7374 9.33377 20.5532C9.33377 19.369 13.5406 18.3813 19.1767 18.1273V21.9913C19.5452 22.018 20.6006 22.0809 22.059 22.0809C23.8091 22.0809 24.6854 22.0074 24.8432 21.9926V18.13C30.4674 18.3826 34.6649 19.3717 34.6649 20.5532C34.6649 21.7347 30.4687 22.7237 24.8432 22.975L24.8485 22.9764ZM24.8485 17.7304V14.2727H32.6974V9H11.3278V14.2727H19.1753V17.729C12.7968 18.0244 8 19.2982 8 20.8245C8 22.3508 12.7968 23.6232 19.1753 23.92V35H24.8472V23.916C31.2111 23.6206 36 22.3482 36 20.8232C36 19.2982 31.2151 18.0258 24.8472 17.729L24.8485 17.7304Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2013_46">
+                                                <rect width="43" height="43" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </div>
+
+                                <p class="main-form-popup__select-value-title">USDT</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="main-form-popup__inp-wrapper sd2">
+                    <div class="main-form-popup__inp">
+                        <p class="main-form-popup__inp-title">You Get</p>
+                        <input type="text" value="0.01" placeholder="0.00">
+                    </div>
+
+                    <div class="main-form-popup__select">
+                        <div class="main-form-popup__select-activ main-form-popup__select-value">
+                            <div class="main-form-popup__select-value-img">
+                                <svg width="20" height="22" viewBox="0 0 20 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                        fill="#D9D9D9" />
+                                    <path
+                                        d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                        fill="url(#paint0_linear_435_240)" />
+                                    <path
+                                        d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                        stroke="#D9D9D9" stroke-width="0.821918" />
+                                    <path
+                                        d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                        stroke="url(#paint1_linear_435_240)" stroke-width="0.821918" />
+                                    <path
+                                        d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                        stroke="black" stroke-opacity="0.31" stroke-width="0.821918" />
+                                    <path
+                                        d="M14.4542 16.8885L12.9689 15.4031C12.5087 15.7239 12.0205 15.961 11.5045 16.1144C10.9954 16.2609 10.4724 16.2888 9.93545 16.1981C9.40546 16.1005 8.88594 15.8529 8.37688 15.4554L9.89361 13.9387C10.2004 14.1061 10.5108 14.1793 10.8246 14.1584C11.1384 14.1374 11.4417 14.0433 11.7346 13.8759C12.0275 13.6946 12.296 13.4819 12.54 13.2379C12.7702 13.0077 12.9515 12.7706 13.084 12.5266C13.2165 12.2825 13.2792 12.0454 13.2722 11.8153C13.2653 11.5852 13.1711 11.3794 12.9898 11.1981C12.8294 11.0377 12.6586 10.9506 12.4773 10.9366C12.3029 10.9157 12.1181 10.9471 11.9229 11.0308C11.7276 11.1005 11.5289 11.1946 11.3267 11.3132C10.9571 11.5294 10.6223 11.7386 10.3225 11.9408C10.0226 12.1291 9.7367 12.3034 9.46474 12.4638C9.19277 12.6103 8.92081 12.7288 8.64884 12.8195C8.11189 13.0217 7.59236 13.0949 7.09027 13.0391C6.58819 12.9694 6.07564 12.673 5.55263 12.15C5.10632 11.7037 4.83436 11.2365 4.73673 10.7483C4.6391 10.2463 4.67397 9.75114 4.84133 9.263C5.00172 8.76788 5.24579 8.32158 5.57355 7.92409L4.10912 6.45967L5.48987 5.07892L6.97521 6.56427C7.39362 6.22954 7.8469 6.00639 8.33504 5.89482C8.82318 5.78324 9.31132 5.79021 9.79946 5.91574C10.2876 6.04126 10.7479 6.31322 11.1802 6.73163L9.72624 8.1856C9.48915 8.00429 9.24856 7.91015 9.00449 7.90317C8.75345 7.88922 8.49891 7.9485 8.2409 8.081C7.9759 8.20652 7.72137 8.39131 7.4773 8.63539C7.2681 8.83064 7.09376 9.04682 6.95429 9.28392C6.8218 9.51404 6.75206 9.74417 6.74509 9.97429C6.73114 10.1974 6.8218 10.4066 7.01705 10.6019C7.15652 10.7414 7.31343 10.8285 7.48776 10.8634C7.65512 10.8913 7.83295 10.8808 8.02123 10.832C8.20952 10.7693 8.40826 10.6891 8.61746 10.5914C8.91035 10.452 9.22067 10.2741 9.54842 10.058C9.8692 9.83482 10.176 9.64654 10.4689 9.49312C10.9571 9.20024 11.4173 8.98406 11.8497 8.84459C12.275 8.69815 12.69 8.67374 13.0944 8.77137C13.4989 8.85505 13.9103 9.10609 14.3287 9.5245C14.8099 10.0057 15.1132 10.5112 15.2388 11.0412C15.3643 11.5573 15.3434 12.0733 15.176 12.5893C15.0156 13.0984 14.7471 13.59 14.3706 14.0642L15.8245 15.5182L14.4542 16.8885Z"
+                                        fill="black" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_435_240" x1="-6.2" y1="27.4219" x2="19.9679"
+                                            y2="1.60763" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#E1C167" />
+                                            <stop offset="0.375" stop-color="#DDB74B" />
+                                            <stop offset="0.71" stop-color="#FFE8A7" />
+                                            <stop offset="1" stop-color="#E1C167" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_435_240" x1="-6.2" y1="27.4219" x2="19.9679"
+                                            y2="1.60763" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#E1C167" />
+                                            <stop offset="0.375" stop-color="#DDB74B" />
+                                            <stop offset="0.71" stop-color="#FFE8A7" />
+                                            <stop offset="1" stop-color="#E1C167" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <p class="main-form-popup__select-value-title">USDC</p>
+
+
+
+                        </div>
+                        <div class="main-form-popup__select-ar">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.8335 8.33334L10.0008 12.15L14.1668 8.33334" stroke="white"
+                                    stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="main-form-popup__select-all-value">
+                            <div class="main-form-popup__select-value">
+                                <div class="main-form-popup__select-value-img">
+                                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                            fill="#D9D9D9" />
+                                        <path
+                                            d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                            fill="url(#paint0_linear_435_240)" />
+                                        <path
+                                            d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                            stroke="#D9D9D9" stroke-width="0.821918" />
+                                        <path
+                                            d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                            stroke="url(#paint1_linear_435_240)" stroke-width="0.821918" />
+                                        <path
+                                            d="M10 1.27414C15.2905 1.27414 19.5887 5.62302 19.5889 10.9997C19.5889 16.3766 15.2906 20.7263 10 20.7263C4.70937 20.7263 0.411133 16.3766 0.411133 10.9997C0.411276 5.62302 4.70946 1.27414 10 1.27414Z"
+                                            stroke="black" stroke-opacity="0.31" stroke-width="0.821918" />
+                                        <path
+                                            d="M14.4542 16.8885L12.9689 15.4031C12.5087 15.7239 12.0205 15.961 11.5045 16.1144C10.9954 16.2609 10.4724 16.2888 9.93545 16.1981C9.40546 16.1005 8.88594 15.8529 8.37688 15.4554L9.89361 13.9387C10.2004 14.1061 10.5108 14.1793 10.8246 14.1584C11.1384 14.1374 11.4417 14.0433 11.7346 13.8759C12.0275 13.6946 12.296 13.4819 12.54 13.2379C12.7702 13.0077 12.9515 12.7706 13.084 12.5266C13.2165 12.2825 13.2792 12.0454 13.2722 11.8153C13.2653 11.5852 13.1711 11.3794 12.9898 11.1981C12.8294 11.0377 12.6586 10.9506 12.4773 10.9366C12.3029 10.9157 12.1181 10.9471 11.9229 11.0308C11.7276 11.1005 11.5289 11.1946 11.3267 11.3132C10.9571 11.5294 10.6223 11.7386 10.3225 11.9408C10.0226 12.1291 9.7367 12.3034 9.46474 12.4638C9.19277 12.6103 8.92081 12.7288 8.64884 12.8195C8.11189 13.0217 7.59236 13.0949 7.09027 13.0391C6.58819 12.9694 6.07564 12.673 5.55263 12.15C5.10632 11.7037 4.83436 11.2365 4.73673 10.7483C4.6391 10.2463 4.67397 9.75114 4.84133 9.263C5.00172 8.76788 5.24579 8.32158 5.57355 7.92409L4.10912 6.45967L5.48987 5.07892L6.97521 6.56427C7.39362 6.22954 7.8469 6.00639 8.33504 5.89482C8.82318 5.78324 9.31132 5.79021 9.79946 5.91574C10.2876 6.04126 10.7479 6.31322 11.1802 6.73163L9.72624 8.1856C9.48915 8.00429 9.24856 7.91015 9.00449 7.90317C8.75345 7.88922 8.49891 7.9485 8.2409 8.081C7.9759 8.20652 7.72137 8.39131 7.4773 8.63539C7.2681 8.83064 7.09376 9.04682 6.95429 9.28392C6.8218 9.51404 6.75206 9.74417 6.74509 9.97429C6.73114 10.1974 6.8218 10.4066 7.01705 10.6019C7.15652 10.7414 7.31343 10.8285 7.48776 10.8634C7.65512 10.8913 7.83295 10.8808 8.02123 10.832C8.20952 10.7693 8.40826 10.6891 8.61746 10.5914C8.91035 10.452 9.22067 10.2741 9.54842 10.058C9.8692 9.83482 10.176 9.64654 10.4689 9.49312C10.9571 9.20024 11.4173 8.98406 11.8497 8.84459C12.275 8.69815 12.69 8.67374 13.0944 8.77137C13.4989 8.85505 13.9103 9.10609 14.3287 9.5245C14.8099 10.0057 15.1132 10.5112 15.2388 11.0412C15.3643 11.5573 15.3434 12.0733 15.176 12.5893C15.0156 13.0984 14.7471 13.59 14.3706 14.0642L15.8245 15.5182L14.4542 16.8885Z"
+                                            fill="black" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_435_240" x1="-6.2" y1="27.4219"
+                                                x2="19.9679" y2="1.60763" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#E1C167" />
+                                                <stop offset="0.375" stop-color="#DDB74B" />
+                                                <stop offset="0.71" stop-color="#FFE8A7" />
+                                                <stop offset="1" stop-color="#E1C167" />
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_435_240" x1="-6.2" y1="27.4219"
+                                                x2="19.9679" y2="1.60763" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#E1C167" />
+                                                <stop offset="0.375" stop-color="#DDB74B" />
+                                                <stop offset="0.71" stop-color="#FFE8A7" />
+                                                <stop offset="1" stop-color="#E1C167" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+
+                                <p class="main-form-popup__select-value-title">USDC</p>
+                            </div>
+
+                            <div class="main-form-popup__select-value">
+                                <div class="main-form-popup__select-value-img">
+                                    <svg width="43" height="43" viewBox="0 0 43 43" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2013_46)">
+                                            <circle cx="21.5" cy="21.5" r="21.5" fill="#50AF95" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M24.8485 22.9764C24.6894 22.9884 23.8674 23.0378 22.0338 23.0378C20.5754 23.0378 19.5399 22.9937 19.1767 22.9764C13.5406 22.7264 9.33377 21.7374 9.33377 20.5532C9.33377 19.369 13.5406 18.3813 19.1767 18.1273V21.9913C19.5452 22.018 20.6006 22.0809 22.059 22.0809C23.8091 22.0809 24.6854 22.0074 24.8432 21.9926V18.13C30.4674 18.3826 34.6649 19.3717 34.6649 20.5532C34.6649 21.7347 30.4687 22.7237 24.8432 22.975L24.8485 22.9764ZM24.8485 17.7304V14.2727H32.6974V9H11.3278V14.2727H19.1753V17.729C12.7968 18.0244 8 19.2982 8 20.8245C8 22.3508 12.7968 23.6232 19.1753 23.92V35H24.8472V23.916C31.2111 23.6206 36 22.3482 36 20.8232C36 19.2982 31.2151 18.0258 24.8472 17.729L24.8485 17.7304Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2013_46">
+                                                <rect width="43" height="43" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </div>
+
+                                <p class="main-form-popup__select-value-title">USDT</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <p class="main-form-popup__course">1 BTC - 1542 $TRUMP</p>
+
+                <div class="main-form-popup__inp-wrapper main-form-popup__inp-def">
+                    <div class="main-form-popup__inp ">
+                        <p class="main-form-popup__inp-title">Recipient Wallet</p>
+                        <input type="text" placeholder="Enter your wallet">
+                    </div>
+                </div>
+
+                <div class="main-form-popup__checkbox">
+                    <!-- Группа чекбоксов -->
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="checkbox-input" id="color-1" name="colors" value="indigo">
+                        <label for="color-1" class="checkbox-label">I've read and agree to the Change NOW Terms of Use,
+                            Privacy Policy and Risk Disclosure Statement</label>
+                    </div>
+                </div>
+
+                <div class="main-form-popup__btn-wrapper">
+                    <button class="main-form-popup__btn">Exchange</button>
+                </div>
+
+            </div>
+        </div>
+
+
     </div>
     <script src="js/scripts.min.js"></script>
 </body>

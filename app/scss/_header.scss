@@ -72,3 +72,129 @@
     padding: 10px 26px;
     -webkit-text-fill-color: transparent;
 }
+
+.header__logo-img-mob {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+.header-mob {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 755px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__logo-img {
+        display: none;
+    }
+
+    .header__logo-img-mob {
+        display: block;
+        width: 100%;
+    }
+
+    .header__logo {
+        width: 106px;
+    }
+
+    .header {
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: #060606;
+
+        .header__btn-wrapper {
+            display: none;
+        }
+    }
+
+    .burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 16px;
+        position: relative;
+    }
+
+    .burger__row {
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        border-radius: 100px;
+        position: absolute;
+        transition: all ease 0.3s;
+    }
+
+    .br-1 {
+        top: 0;
+    }
+
+    .br-2 {
+        bottom: 0;
+        background: #E1C167;
+    }
+
+    .header-mob {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        background: #060606;
+        height: 100vh;
+        position: fixed;
+        display: block;
+        padding-top: 73px;
+        padding-bottom: 60px;
+        transform: translateY(-130%);
+        transition: all ease 0.8s;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            padding-top: 60px;
+        }
+
+        .header__btn-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .header__nav-ul-mob {
+            li {
+                text-align: center;
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .header-mob_activ {
+        transform: translateY(0);
+    }
+
+    .burger_activ {
+        .br-1 {
+            transform: rotate(-45deg);
+            top: auto;
+        }
+
+        .br-2 {
+            transform: rotate(45deg);
+            bottom: auto;
+        }
+    }
+}

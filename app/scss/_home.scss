@@ -120,3 +120,127 @@
     line-height: normal;
     opacity: 0.3;
 }
+
+.footer__top {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__top-title {
+
+    margin-bottom: 5px;
+    color: #FFF;
+
+    text-align: center;
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__top-subtitle {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.footer__top-social-row {
+    display: flex;
+}
+
+.footer__top-social {
+    margin-right: 30px;
+    display: inline-block;
+
+    svg {
+        display: block;
+    }
+}
+
+.footer__top-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__top-nav-ul {
+    width: 170px;
+}
+
+.footer__top-nav-list {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 15px;
+    padding-right: 20px;
+}
+
+.footer__top-nav-link {
+    color: #fff;
+    transition: all ease 0.3s;
+
+    &:hover {
+        color: #D3B244;
+        transition: all ease 0.3s;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero-sec-v1__main-data {
+        width: 50%;
+    }
+
+    .hero-sec-v1__title {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    .hero-sec-v1__img {
+        height: 480px;
+    }
+
+    .hero-sec-v1 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 755px) {
+    .hero-sec-v1 {
+        padding-top: 73px;
+        padding-bottom: 80px;
+        height: auto;
+
+        .container {
+            padding-top: 340px;
+            display: flex;
+            height: auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .hero-sec-v1__img {
+        height: 340px;
+        left: auto;
+    }
+
+    .hero-sec-v1__main-data {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .hero-sec-v1__title {
+        font-size: 32px;
+    }
+
+
+
+}
